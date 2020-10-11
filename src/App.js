@@ -1,20 +1,16 @@
 import React from 'react';
-import { Query } from 'react-apollo';
-import Paises from './components/Paises.js'
-import { GET_PAISES } from './queries';
-import './App.css';
+import { Provider } from 'react-redux';
 
+import Routes from './routes/index';
+import store from './store';
+// import Paises from './components/Paises.js'
 
 const App = () => (
 
-    <Query query={GET_PAISES}>
-      {({ loading, data }) => {
-        if (loading) return null;
+  <Provider store={store}>
+    <Routes />
+  </Provider>
 
-        return <Paises dados={data.Country} />
-
-      }}
-    </Query>
 );
 
 export default App;
