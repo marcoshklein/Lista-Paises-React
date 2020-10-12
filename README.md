@@ -1,3 +1,5 @@
+Projeto criado para teste de conhecimento em ReactJS.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
