@@ -10,6 +10,7 @@ Versão 0.1.0
   - Utilizado redux para gerenciar o estado; 
   - Utilizado react-router para trocar de página; 
   - Utilizado @testing-library/react para testes;
+  - Utilizado react-bootstrap para componentes visuais;
   
   Publicado no [Heroku](https://fierce-bastion-94147.herokuapp.com)
  
