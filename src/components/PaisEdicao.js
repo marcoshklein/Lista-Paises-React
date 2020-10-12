@@ -9,8 +9,6 @@ const PaisEdicao = ({ paisAtivo, dispatch, history }) => {
   const [pais, setPais] = useState(paisAtivo);
 
   function salvar() {
-    console.log('passei aqui');
-    console.log(pais);
     dispatch(Action.setSalvarPais(pais));
     history.push('/')
   };

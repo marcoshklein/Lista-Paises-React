@@ -2,7 +2,6 @@ import { createStore } from 'redux';
 
 
 function reducer(state, action) {
-  console.log(state)
   if (action.type === 'SET_PAISES') {
 
     return {

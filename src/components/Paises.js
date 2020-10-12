@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import apolloClient from '../apolloClient';
-import { GET_PAISES } from '../queries';
+import { GET_PAISES } from './queries';
 import * as Action from './../store/actions';
 
 // Requisitos

@@ -18,4 +18,3 @@ export function setSalvarPais(pais) {
     pais
   }
 };
-// dispatch(Action.setDetalhePais(pais));
