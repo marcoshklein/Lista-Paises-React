@@ -7,7 +7,7 @@ import { withRouter } from 'react-router';
 const PaisDetalhe = ({ paisAtivo, history }) => {
 
   return (
-    <>
+    <div style={{ margin: "20px" }}>
     <Button onClick={() => history.goBack()} variant='secondary'>Voltar</Button>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={paisAtivo?.flag?.svgFile} />
@@ -25,7 +25,7 @@ const PaisDetalhe = ({ paisAtivo, history }) => {
       </Card.Body>
     </Card>
 
-    </>
+    </div>
   );
 }
 

@@ -19,7 +19,15 @@ function Paises({ paises, dispatch, history }) {
     history.push('/detalhe')
   }
 
+  function goToEditPais(pais) {
+    dispatch(Action.setDetalhePais(pais));
+    history.push('/edicao')
+  }
+
   function consultarPaises() {
+    if (paises) {
+      return
+    }
     apolloClient.query(GET_PAISES)
       .then(result => {
         dispatch(Action.setDadosPaises(result.data.Country));
@@ -42,7 +50,7 @@ function Paises({ paises, dispatch, history }) {
 
   return (
     <>
-      <div className="col-md-3" style={{ marginTop: "20px" }}>
+      <div style={{ margin: "20px" }}>
         <div>
           <input type="text" placeholder="Filtrar..." onChange={(e) => setSearch(e.target.value)} />
         </div>
@@ -56,7 +64,8 @@ function Paises({ paises, dispatch, history }) {
                 <Card.Text>
                   {pais.capital}
                 </Card.Text>
-                <Button onClick={() => goToPaisDetalhe(pais)} variant="primary">Detalhes</Button>
+                <Button onClick={() => goToEditPais(pais)} variant="primary">Editar</Button>{' '}
+                <Button onClick={() => goToPaisDetalhe(pais)} variant="info">+ Detalhes</Button>
               </Card.Body>
             </Card>
           ))}
