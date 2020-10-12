@@ -1,7 +1,18 @@
-Projeto criado para teste de conhecimento em ReactJS.
+Projeto utilizando React e a [API Graph Countries](https://github.com/lennertVanSever/graphcountries) 
 
-Base -> [Create React App](https://github.com/facebook/create-react-app).
-
+Versão 0.1.0
+ * Lista de cards para exibir os países mostrando a bandeira, o nome e a capital dele; 
+ * Possibilidade do usuário buscar países; 
+ * Na lista, o usuário pode ir para a página de detalhes do país e ver uma lista mais completa de informações;
+ * Formulário para editar os dados de um país (salvando apenas no client-side);
+ 
+ Observações:
+  - Utilizado redux para gerenciar o estado; 
+  - Utilizado react-router para trocar de página; 
+  - Utilizado @testing-library/react para testes;
+  
+  Publicado no [Heroku](https://fierce-bastion-94147.herokuapp.com)
+ 
 ## Available Scripts
 
 In the project directory, you can run:
